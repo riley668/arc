@@ -143,10 +143,10 @@ mtime, so sealing a second time made the first batch undecryptable.
 and VAAPI does not initialise on this hardware, so `libopenh264` is used with
 a bitrate derived from resolution × quality instead of CRF.
 
-**Legacy wrappers.** `~/.aliases/image_compressor`, `encrypt_images.sh`,
-`decrypt_images_fixed.sh` and `compress-video.sh` are now thin wrappers that
-`exec` into `arc`. The original implementations are in this repo's git
-history (commit `7277dde`).
+**Legacy scripts removed.** The four scripts arc replaced
+(`image_compressor`, `encrypt_images.sh`, `decrypt_images_fixed.sh`,
+`compress-video.sh`) and their shell aliases (`compress`, `encrypt`,
+`decrypt`, `compress-video`) have been deleted. Use `arc` instead.
 
 ## Test
 
